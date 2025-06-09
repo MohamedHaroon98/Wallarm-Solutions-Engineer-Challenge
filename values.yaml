@@ -1,0 +1,12 @@
+controller:
+  wallarm:
+    enabled: true
+    existingSecret:
+      enabled: true
+      secretKey: token
+      secretName: wallarm-api-token
+    apiHost: api.wallarm.com
+    instance: "wallarm-demo"
+
+# We keep the default values for the rest of the ingress-nginx configuration
+# helm install wallarm-ingress wallarm/wallarm-ingress -f values.yaml
